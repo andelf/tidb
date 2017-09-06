@@ -1,6 +1,6 @@
 language: go
 
-go_import_path: github.com/pingcap/tidb
+# go_import_path: github.com/pingcap/tidb
 
 go:
   - 1.8
@@ -17,7 +17,7 @@ matrix:
     - go: 1.8
       env: TRAVIS_COVERAGE=1
 
-before_install:  
+before_install:
   # create /logs/unit-test for unit test.
   - sudo mkdir /logs
   - sudo touch /logs/unit-test
